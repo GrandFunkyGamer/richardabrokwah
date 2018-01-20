@@ -1,0 +1,171 @@
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+.navbar.navbar-light .breadcrumb 
+.nav-item.active > .nav-link, 
+.navbar.navbar-light .navbar-nav
+.nav-item.active > .nav-link {
+ 	background-color: #4eb5f7;
+ 	color: #fff;
+ }
+
+ nav a {
+ 	font-family: 'Roboto Mono', monospace;
+}
+
+.jumbotron {
+	margin-top: 56px;
+}
+
+.section-padding {
+    padding: 60px 0;
+}
+
+.section-title {
+	padding-bottom: 50px;
+	text-align: center;
+	color: #4eb5f7;
+	font-family: 'Roboto Mono', monospace;
+}
+
+.author-img {
+	max-width: 100%;
+	height: auto;
+}
+
+.theme-color {
+	color: #4eb5f7;
+}
+
+/********************/
+/**SERVICE SECTION**/
+/*******************/
+
+.service-area {
+	background-color: #f0f0f0;
+}
+
+.single-service {
+    position: relative;
+    overflow: hidden;
+    font-size: 15px;
+    font-weight: 300;
+    padding: 40px 30px;
+    background-color: #fff;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.single-service h4 {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 15px 0 20px;
+    text-transform: capitalize;
+}
+
+.service-img {
+    height: 65px;
+    width: 60px;
+    background-size: contain;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+}
+
+/*****************/
+/**WORK SECTION**/
+/****************/
+
+.work-area {
+	background-color: #fff;
+}
+
+.work-thumb img {
+    width: 100%; 
+}
+
+#work .col-md-3 {
+    margin: 0;
+    padding: 0;
+}
+
+.work-details {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+}
+.work-details small {
+	color: #d9d9d9;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 3px;
+}
+
+.hm-blue-strong .mask,
+.hm-blue-strong .full-bg-img {
+  background-color: rgba(78, 181, 247, 0.7); 
+}
+
+
+/*****************/
+/**BLOG SECTION**/
+/****************/
+
+.blog-area {
+	background-color: #f0f0f0;
+}
+
+/*****************/
+/**CONTACT SECTION**/
+/****************/
+
+section .contact {
+    background-color: #4eb5f7;
+    height: 100%;
+    color: #fff;
+    /**font-family: 'Roboto Mono', monospace;**/
+}
+
+section .form form .btn-floating {
+    float: right;
+    position: relative;
+    bottom: 3rem;
+    margin-right: 0;
+    background-color: #4eb5f7;
+}
+
+.contact-card {
+	padding-left: 10px; 
+	list-style: none;
+	text-align: left;
+}
+
+
+footer.page-footer .footer-copyright {
+    overflow: hidden;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    background-color: #4eb5f7;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+
+/**.middle-text .title-2 h1 {
+    color: #535353;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+}**/

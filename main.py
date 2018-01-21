@@ -5,6 +5,10 @@ from google.appengine.ext import ndb
 app = Flask(__name__)
 
 
-@app.route("/")
+@app.route('/')
 def home():
-	return render_template("index.html")
+    return render_template('index.html', work_list=WORK)
+
+
+from data import WORK
+

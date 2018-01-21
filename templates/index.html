@@ -1,26 +1,5 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Home | Richard Abrokwah </title>
-    <meta name="description" content="">
-    <!-- Place favicon.ico in the root directory -->
-    <link rel="icon" type="image/ico" href="../static/images/favicon.ico">
-    <!--<link href="#" type="images/x-icon" rel="shortcut icon">-->
-    <!-- All css files are included here. -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
-    <link rel="stylesheet" type="text/css" href="../static/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
-    <link rel="stylesheet" type="text/css" href="../static/css/mdb.css">
-    <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="../static/css/custom.css">
-    
-</head>  
-<!--MAIN BODY WRAPPER-->
-<body>
+{% extends 'base.html' %}
+{% block content %}
     <div class="container-fluid">
         <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg navbar-light bg-light">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,7 +33,7 @@
     <div id="Home" class="jumbotron jumbotron-fluid">
         <div class="container">
             <img src="">
-            <h1 class="display-3">Web Developer</h1>
+            <h1 class="display-3 bounceIn animated">Web Developer</h1>
             <p class="lead">Richard Abrokwah</p>
         </div>
     </div>
@@ -123,20 +102,22 @@
                 </div>
             </div> 
             <div class="row">
+                {% for work in work_list %}
                 <div class="col-md-3 col-sm-6" style="margin-bottom: 20px;">
                     <div class="work-thumb">
                         <div class="view overlay hm-blue-strong">
                             <img src="../static/images/work2.jpg" class="img-fluid " alt="work">
                             <div class="mask flex-center waves-effect waves-light">
                                 <div class="work-details">
-                                    <p class="white-text bounce">The Baby Hub</p>
-                                    <small> E-commerce</small>
+                                    <p class="white-text bounce">{{ work.title|striptags }}</p>
+                                    <small> {{ work.type|striptags}}</small>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    {% endfor %}
                 </div>  
-                <div class="col-md-3 col-sm-6" style="margin-bottom: 20px;">
+                {#<div class="col-md-3 col-sm-6" style="margin-bottom: 20px;">
                     <div class="work-thumb">
                         <div class="view overlay hm-red-strong">
                             <img src="../static/images/work2.jpg" class="img-fluid " alt="placeholder">
@@ -165,7 +146,7 @@
                             </div>
                         </div>
                     </div>
-                </div>     
+                </div>   #}  
             </div>
         </div>
     </div>
@@ -391,17 +372,6 @@
         </div>
     </footer>
     <!--FOOTER AREA END-->  
+    {% endblock %}
 
-                <!-- Optional JavaScript -->
-                <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-                <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-                <script type="text/javascript" src="../static/js/bootstrap.js"></script>
-                <script type="text/javascript" src="../static/js/mdb.js"></script>
-                <script type="text/javascript" src="../static/js/custom.js"></script>
-
-
-
-
-            </body>
-            </html>
+             

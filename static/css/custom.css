@@ -1,5 +1,5 @@
-.selector-for-some-widget {
-  box-sizing: content-box;
+body {
+    font-family: 'Roboto Mono', monospace;
 }
 
 .navbar.navbar-light .breadcrumb 
@@ -11,7 +11,7 @@
  }
 
  nav a {
- 	font-family: 'Roboto Mono', monospace;
+ 	font-family: 'Roboto Mono', monospace !important;
 }
 
 .jumbotron {
@@ -160,6 +160,7 @@ footer.page-footer .footer-copyright {
     background-color: #4eb5f7;
     text-align: center;
     font-size: 0.9rem;
+    background-image: url('/static/images/footer.jpg');
 }
 
 
@@ -184,3 +185,12 @@ footer.page-footer .footer-copyright {
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.9);
 }*/
 
+
+
+.top-nav-collapse {
+  background-color: #fff !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+  background-image: url('/static/images/footer.jpg');
+}

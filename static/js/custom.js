@@ -1,6 +1,6 @@
 $(".navbar-nav a").on("click", function(){
-   $(".navbar-nav").find(".active").removeClass("active");
-   $(this).parent().addClass("active");
+ $(".navbar-nav").find(".active").removeClass("active");
+ $(this).parent().addClass("active");
 });
 
 var Messenger = function(el){
@@ -13,10 +13,10 @@ var Messenger = function(el){
     m.current_length = 0;
     m.fadeBuffer = false;
     m.messages = [
-      'Clean code.',
-      'Responsive Websites.',
-      'Latest technologies',
-      'UI/UX.'
+    'Clean code.',
+    'Responsive Websites.',
+    'Latest technologies',
+    'UI/UX.'
     ];
     
     setTimeout(m.animateIn, 100);
@@ -96,3 +96,52 @@ var Messenger = function(el){
 
 console.clear();
 var messenger = new Messenger($('#messenger'));
+
+jQuery(document).ready(function(jQuery) {            
+  var navbarNavAltMarkup = jQuery("#navbarNavAltMarkup"),
+  offset = 40,
+  navbarNavAltMarkupHeight = navbarNavAltMarkup.outerHeight()+offset,
+                // All list items
+                menuItems =  navbarNavAltMarkup.find('a[href*="#"]'),
+                // Anchors corresponding to menu items
+                scrollItems = menuItems.map(function(){
+                  var href = jQuery(this).attr("href"),
+                  id = href.substring(href.indexOf('#')),
+                  item = jQuery(id);
+                  //console.log(item)
+                  if (item.length) { return item; }
+                });
+
+            // so we can get a fancy scroll animation
+            menuItems.click(function(e){
+              var href = jQuery(this).attr("href"),
+              id = href.substring(href.indexOf('#'));
+              offsetTop = href === "#" ? 0 : jQuery(id).offset().top-navbarNavAltMarkupHeight+1;
+              jQuery('html, body').stop().animate({ 
+                scrollTop: offsetTop
+              }, 300);
+              e.preventDefault();
+            });
+
+            // Bind to scroll
+            jQuery(window).scroll(function(){
+               // Get container scroll position
+               var fromTop = jQuery(this).scrollTop()+navbarNavAltMarkupHeight;
+
+               // Get id of current scroll item
+               var cur = scrollItems.map(function(){
+                 if (jQuery(this).offset().top < fromTop)
+                   return this;
+               });
+
+               // Get the id of the current element
+               cur = cur[cur.length-1];
+               var id = cur && cur.length ? cur[0].id : "";               
+               
+               menuItems.parent().removeClass("active");
+               if(id){
+                menuItems.parent().end().filter("[href*='#"+id+"']").parent().addClass("active");
+              }
+              
+            })
+          })

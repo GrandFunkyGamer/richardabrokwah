@@ -1,50 +1,50 @@
 {% extends 'base.html' %}
 {% block content %}
-    <div class="container-fluid">
-        <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg navbar-light bg-light scrolling-navbar">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <h1 class="navbar-brand mb-0"><img src="static/images/richard.png"></h1>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#Home">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#About">About me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Service">Service</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Work">Work</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Blog">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Contact">Contact</a>
-                    </li>
-                </ul>
-            </div>              
-        </nav>
+<div class="container-fluid">
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg navbar-light bg-light scrolling-navbar">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <h1 class="navbar-brand mb-0"><img src="static/images/richard.png"></h1>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#Home">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#About">About me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Service">Service</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Work">Work</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Blog">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Contact">Contact</a>
+                </li>
+            </ul>
+        </div>              
+    </nav>
+</div>
+<div id="Home" class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <img src="">
+        <h1 class="display-5 bounceIn animated">FRONT-END WEB DEVELOPER</h1>
+        <div id="messenger"></div>
+        <button type="button" class="btn btn-primary btn-lg rounded-0">I NEED A WEBSITE <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </button>
+        <button type="button" class="btn peach-gradient btn-lg rounded-0">HIRE ME</button>
     </div>
-    <div id="Home" class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <img src="">
-            <h1 class="display-3 bounceIn animated">FRONT-END WEB DEVELOPER</h1>
-            <div id="messenger"></div>
-            <button type="button" class="btn btn-primary btn-lg rounded-0">I NEED A WEBSITE <i class="fa fa-chevron-right" aria-hidden="true"></i>
-</button>
-            <button type="button" class="btn peach-gradient btn-lg rounded-0">Large button</button>
-        </div>
-    </div>
-    <!--ABOUT AREA-->
-    <div id="About" class="section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
+</div>
+<!--ABOUT AREA-->
+<div id="About" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
                    <!--  <div>
                         <img  class="author-img" src="../static/images/author.jpg">
                     </div> -->
@@ -74,23 +74,29 @@
             <div class="row">
                 <div class="col-md-4 col-sm-6">
                     <div class="single-service">
-                        <div class="service-img"><i class="fa fa-window-restore"></i></div>
-                        <h4>Responsive design</h4>
-                        <p>I scale your website and application with modern framework, from phones to tablets to desktops</p>   
+                        <div class="pb-4"><i class="fa fa-2x fa-code"></i></div>
+                        <h4>Front-end Developer</h4>
+                        <p>With code, ideas and sketches can become a reality in the browser and thats what i love to do.</p>
+                        <h5 class="primary">Skillset</h5>  
+                        <p>HTML/CSS, JS, Less, Sass, Git</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="single-service">
-                        <div class="service-img"><i class="fa fa-window-restore"></i></div>
-                        <h4>Responsive design</h4>
-                        <p>I scale your website and application with modern framework, from phones to tablets to desktops</p>   
+                        <div class="pb-4"><i class="fa fa-2x fa-book"></i></div>
+                        <h4>Mentor</h4>
+                        <p>I love to help kids and adults alike with the passion for development to make something out  of it.</p>  
+                        <h5 class="primary">Where i teach</h5>  
+                        <p><a target="_blank" href="https://codeforkids.club">Code For Kids Club</a></p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="single-service">
-                        <div class="service-img"><i class="fa fa-window-restore"></i></div>
-                        <h4>Responsive design</h4>
-                        <p>I scale your website and application with modern framework, from phones to tablets to desktops</p>   
+                        <div class="pb-4"><i class="fa fa-2x fa-paint-brush"></i></div>
+                        <h4>Rookie Designer</h4>
+                        <p>I value simple content structure, clean design patterns, and thoughtful interactions.</p>   
+                        <h5 class="primary">Things i like to design</h5>
+                        <p>UI, UX, Web</p>
                     </div>
                 </div>
             </div>
@@ -103,11 +109,12 @@
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     <h3 class="section-title">Recent work</h3>
+                    <p class="text-center">Here are a few recent design projects. Want to see more? Email me.</p>
                 </div>
             </div> 
             <div class="row">
                 {% for work in work_list %}
-                <div class="col-md-3 col-sm-6" style="margin-bottom: 20px;">
+                <div class="col-md-4 col-sm-6" style="margin-bottom: 20px;">
                     <div class="work-thumb">
                         <div class="view overlay hm-blue-strong">
                             <img src="../static/images/work2.jpg" class="img-fluid " alt="work">
@@ -120,7 +127,7 @@
                         </div>
                     </div>
                 </div>
-                 {% endfor %}  
+                {% endfor %}  
             </div>
         </div>
     </div>
@@ -336,8 +343,8 @@
             </section>
         </div>
     </div>   
-   <!--CONTACT AREA END-->
-   <!--FOOTER AREA-->
+    <!--CONTACT AREA END-->
+    <!--FOOTER AREA-->
     <footer class="page-footer center-on-small-only">
         <div class="footer-copyright">
             <div class="container-fluid">
@@ -348,4 +355,3 @@
     <!--FOOTER AREA END-->  
     {% endblock %}
 
-             

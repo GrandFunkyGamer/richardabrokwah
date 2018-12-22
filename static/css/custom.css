@@ -218,4 +218,6 @@ footer.page-footer .footer-copyright {
 
 .navbar:not(.top-nav-collapse) {
   background-image: url('/static/images/footer.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }

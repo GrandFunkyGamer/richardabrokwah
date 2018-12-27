@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto Mono', monospace;
+    font-family: Hind,sans-serif;
 }
 
 .primary {
@@ -8,6 +8,22 @@ body {
 
 .blue {
     background-color: #4eb5f7 !important;
+}
+
+h1 {
+    font-weight: 700;
+    color: #515769;
+    margin: 0 0 15px;
+}
+
+p {
+    line-height: 1.4;
+}
+
+p {
+    font-weight: 400;
+    color: #a6a7aa;
+    margin-bottom: 15px;
 }
 
 a {
@@ -216,7 +232,7 @@ footer.page-footer .footer-copyright {
 
 
 
-.top-nav-collapse {
+/*.top-nav-collapse {
   background-color: #fff !important;
 }
 
@@ -224,10 +240,13 @@ footer.page-footer .footer-copyright {
   background-image: url('/static/images/footer.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-}
+}*/
 
-textarea.md-textarea {
-    min-height: 10rem;
+nav a {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 20px;
 }
 
 input[type=date], input[type=datetime-local], input[type=email], input[type=number], input[type=password], input[type=search-md], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], textarea.md-textarea {
@@ -236,4 +255,15 @@ input[type=date], input[type=datetime-local], input[type=email], input[type=numb
 
 .formHeader {
     text-align: center;
+}
+
+.hero-title {
+    font-size: 70px;
+    line-height: 1;
+} 
+
+@media (max-width: 480px) {
+.hero-title {
+    font-size: 50px;
+}
 }

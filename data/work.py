@@ -2,11 +2,23 @@ WORK = [
 
 {
 
+    "title": "CODE FOR KIDS",
+    "type": ("""Website"""),
+    "id": "codeforkids",
+},
+{
+
     "title": "THE BABY HUB",
     "type": ("""E-commerce"""),
     "id": "thebabyhub",
-    },
-    {
+},
+{
+
+    "title": "EITBS",
+    "type": ("""Website"""),
+    "id": "eitbs",
+},
+{
 
     "title": "NATE BATHROOMS",
     "type": ("""E-commerce"""),
@@ -14,11 +26,10 @@ WORK = [
 },
 {
 
-    "title": "CITSYS",
+    "title": "SPOT KLEANERS",
     "type": ("""Website"""),
-    "id": "citsys",
+    "id": "spotkleaners",
 },
-
 {
 
     "title": "CITSYS",

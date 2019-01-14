@@ -204,11 +204,10 @@ footer.page-footer .footer-copyright {
     overflow: hidden;
     height: 50px;
     line-height: 50px;
-    color: #fff;
-    background-color: #4eb5f7;
+    color: #526173;
+    background-color: #fff;
     text-align: center;
     font-size: 0.9rem;
-    background-image: url('/static/images/footer.jpg');
 }
 
 
@@ -270,3 +269,4 @@ input[type=date], input[type=datetime-local], input[type=email], input[type=numb
     font-size: 50px;
 }
 }
+

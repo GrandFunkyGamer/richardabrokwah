@@ -5,7 +5,7 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <h1 class="navbar-brand mb-0"><img src="static/images/richard.png"></h1>
+        <h1 class="navbar-brand mb-0 signature"><img src="static/images/richard.png"></h1>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
             <ul class="navbar-nav">
                 <li class="nav-item active">
@@ -146,11 +146,12 @@
                 </div>
             </div>
             <div class="row">
+                {% for blog in blog_list %}
                 <div class="col-md-4 col-sm-6" style="margin-bottom: 20px;">
-                    <div class="card slideInUp">
+                    <div class="card slideInUp">                        
                         <div class="view overlay hm-white-slight">
                             <div class="view overlay hm-white-slight">
-                                <img src="../static/images/blog5.jpg" class="img-fluid" alt="">
+                                <img src="../static/images/{{ blog.image }}" class="img-fluid" alt="{{ blog.alt }}">
                                 <a>
                                     <div class="mask"></div>
                                 </a>
@@ -159,65 +160,18 @@
                                 <!--Social shares button-->
                                <!--  <a class="activator"><i class="fa fa-share-alt"></i></a> -->
                                 <!--Title-->
-                                <h4 class="card-title primary">My Photography Journey</h4>
+                                <h4 class="card-title primary">{{ blog.title|safe }}</h4>
                                 <hr>
                                 <!--Text-->
-                                <p class="card-text">I started playing with photography when I developed love for aviation and plane-spotting ...</p>
-                                <a href="#" class="d-flex flex-row-reverse">
-                                    <h5 class="waves-effect waves-light p-2">Coming soon <i class="fa fa-chevron-right"></i></h5>
+                                <p class="card-text">{{ blog.short_desc|truncate(100, True, '...', 0) }}</p>
+                                <a href="{{ blog.url }}" target="_blank" class="d-flex flex-row-reverse">
+                                    <h5 class="waves-effect waves-light p-2"><mark style="text-decoration: none;">Read</mark> <i class="fa fa-chevron-right"></i></h5>
                                 </a>
                             </div>
-                        </div>
+                        </div>                       
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6" style="margin-bottom: 20px;">
-                    <div class="card wow slideInUp">
-                        <div class="view overlay hm-white-slight">
-                            <div class="view overlay hm-white-slight">
-                                <img src="../static/images/blog2.jpg" class="img-fluid" alt="">
-                                <a>
-                                    <div class="mask"></div>
-                                </a>
-                            </div>
-                            <div class="card-body">
-                                <!--Social shares button-->
-                               <!--  <a class="activator"><i class="fa fa-share-alt"></i></a> -->
-                                <!--Title-->
-                                <h4 class="card-title primary">Natural Portrait</h4>
-                                <hr>
-                                <!--Text-->
-                                <p class="card-text">The quality of the light you will be shooting in is the most important thing to consider ...</p>
-                                <a href="#" class="d-flex flex-row-reverse">
-                                    <h5 class="waves-effect waves-light p-2">Coming soon <i class="fa fa-chevron-right"></i></h5>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6" style="margin-bottom: 20px;">
-                    <div class="card slideInUp">
-                        <div class="view overlay hm-white-slight">
-                            <div class="view overlay hm-white-slight">
-                                <img src="../static/images/blog4.jpg" class="img-fluid" alt="">
-                                <a>
-                                    <div class="mask"></div>
-                                </a>
-                            </div>
-                            <div class="card-body">
-                                <!--Social shares button-->
-                                <!-- <a class="activator"><i class="fa fa-share-alt"></i></a> -->
-                                <!--Title-->
-                                <h4 class="card-title primary">Long Exposure Photography</h4>
-                                <hr>
-                                <!--Text-->
-                                <p class="card-text">When i came across long exposure photography for landscapes. It was love at first sight ...</p>
-                                <a href="#" class="d-flex flex-row-reverse">
-                                    <h5 class="waves-effect waves-light p-2">Coming soon <i class="fa fa-chevron-right"></i></h5>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                 {% endfor %}
             </div>
         </div>
     </div>

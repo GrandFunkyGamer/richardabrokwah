@@ -270,6 +270,10 @@ input[type=date], input[type=datetime-local], input[type=email], input[type=numb
 }
 }
 
+.card img {
+    height: 263px !important;
+}
+
 
 
 

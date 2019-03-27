@@ -20,7 +20,7 @@ BLOG = [
 
 {
     "image": "blog3.jpg",
-    "alt": "Desk with journal and coffee",
+    "alt": "Person Holding Turned-on Silver Laptop Computer",
     "title": "Embedding Code in Medium <br> &nbsp;",
     "short_desc": ("""Wondering how to embed code or code-block in your medium post ? Well, that's no cause for a he"""),
     "url": ("""https://medium.com/@grandfunkygamer/embedding-code-in-medium-68156a0013ed"""),
